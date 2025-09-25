@@ -63,13 +63,6 @@ Contact
 •	Google Maps for locations
 
 5.	Design and User Experience
-Colour scheme
-
-Typography
-
-
-
-
 Layout and Design
 Bar at the top of the screen 
 •	logo + company name
@@ -126,10 +119,35 @@ Estimated budget for website:
 •	R245 p/m for the website host (Host Africa, 2025).
 
 9.	Bibliography
- New Perspective Design, 2021. What Is The Cost Of Creating A Website In South Africa? [2025] | Website Design Prices South Africa | How Much Does Website Design In South Africa Cost? [online]. Available at: https://www.newperspectivestudio.co.za/wp/what-is-the-cost-of-creating-a-website-in-south-africa/ [Accessed 15 August 2025].
+ New Perspective Design, 2021. What Is The Cost Of Creating A Website In South Africa? [2025] | Website Design Prices South Africa | How Much Does Website Design In South Africa Cost? [online]. Available at: https://www.newperspec estudio.co.za/wp/what-is-the-cost-of-creating-a-website-in-south-africa/ [Accessed 15 August 2025].
  Web Partner, 2019. Average Monthly Fee for Website Maintenance in South Africa [online]. Available at: https://www.webpartner.co.za/blog/121-average-monthly-maintenance-fee [Accessed 15 August 2025].
 Coolors, 2025. Love Matcha mock up colour palette. [online] Available at: https://coolors.co/user/palettes/689dacb7cccf77000b16548c [Accessed 14 August 2025].
 Host Africa, 2025. Fast, Reliable and Secure Web Hosting in South Africa. [online]. Available at: https://hostafrica.co.za/web-hosting [Accessed 15 August 2025].
 Love Matcha, 2025. Love matcha [online] Available at: https://love-matcha.co.za [Accessed 12 August 2025].
 Sklyanik, V., 2021. 21 KPI examples every business needs to know. [online] Wix Blog. Available at: https://www.wix.com/blog/kpi-examples [Accessed 14 August 2025].
 Webflow Team, 2025. How to design a homepage: 8 essentials for wowing your audience  [online]. Available at: https://webflow.com/blog/design-a-homepage [Accessed 14 August 2025].
+
+10. Changelog
+25 September 2025
+- changelog created
+
+18 Sept 2025
+- recommitted all files into a new repository
+
+27 Aug 2025
+- added code attribution to project
+- franchise.html completed
+- added README.md to project
+
+26 Aug 2025
+- page titles editted
+- images imported to project
+- homepage.html completed
+- menu.html completed
+- products.html completed
+- contact.html created
+- contact.html editted
+
+25 Aug 2025
+- project files and folders created
+- page navigation created
