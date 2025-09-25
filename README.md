@@ -130,6 +130,7 @@ Webflow Team, 2025. How to design a homepage: 8 essentials for wowing your audie
 10. Changelog
 25 September 2025
 - changelog created and refined (correction from part 1, changelog was initially missing)
+- class tags added to all html files
 
 18 Sept 2025
 - recommitted all files into a new repository
