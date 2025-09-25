@@ -129,7 +129,7 @@ Webflow Team, 2025. How to design a homepage: 8 essentials for wowing your audie
 
 10. Changelog
 25 September 2025
-- changelog created
+- changelog created and refined (correction from part 1, changelog was initially missing)
 
 18 Sept 2025
 - recommitted all files into a new repository
@@ -140,13 +140,12 @@ Webflow Team, 2025. How to design a homepage: 8 essentials for wowing your audie
 - added README.md to project
 
 26 Aug 2025
-- page titles editted
+- page titles refined
 - images imported to project
 - homepage.html completed
 - menu.html completed
 - products.html completed
-- contact.html created
-- contact.html editted
+- contact.html created and refined
 
 25 Aug 2025
 - project files and folders created
