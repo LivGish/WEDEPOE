@@ -4,3 +4,47 @@
 /*DATE: 07/03/2025*/
 /*VERSION: 1.0*/
 /*AVAILABLE: https://advtechonline.sharepoint.com/:w:/r/sites/TertiaryStudents/_layouts/15/Doc.aspx?sourcedoc=%7B2D7589E9-374B-43DE-9596-EF35D83EBD02%7D&file=WEDE5020MM.docx&action=default&mobileredirect=true*/
+
+/*CODE ATTRIBUTION*/
+/*TITLE: movieWeb*/
+/*AUTHOR: afsaana03*/
+/*DATE: 26/09/2025*/
+/*VERSION: 1.7*/
+/*AVAILABLE: https://github.com/afsaana03/movieWeb
+
+
+/*Navigation bar styling*/
+.nav {
+    list-style-type: none; /*removes bullet points*/
+    margin: 0;
+    padding: 0;
+    background: #ffffff; /*sets backgroupnd to white*/
+    overflow: hidden;
+    box-shadow: 0 0.0625rem 0 #595959; /*underlines the menu*/
+    display: flex; /*flex allows menu alignment to be controlled*/
+    flex-wrap: wrap; /*pushes menu to new line on smaller screens*/
+    align-items: center; /*puts menu items in the center of the bar*/
+    justify-content: center; /*adds space between menu items*/
+}
+
+ul.nav li a {
+    color: #3c4f12; /*text colour*/
+    text-decoration: none;  /* Removes the underline from the links */
+    display: flex; /*flex allows menu alignment to be controlled*/
+    padding: 0.875rem 1.25rem; /*Adds spacing around the link for a box*/
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s; /*block transition when you hover over different menu items*/
+}
+
+ul.nav li a:hover {
+    background-color: #f3f6eb; /*box changes colour when you hover over menu item*/
+    color: #3c4f12; /*text colour*/
+    border-radius: 0.5rem; /*rounds corners on hover box*/
+}
+
+@media (max-width: 600px) {
+    .nav {
+        flex-direction: column; /*makes menu items stack vertically on small screens*/
+         align-items: center; /*puts menu items in the center of the bar*/
+    }
+}
