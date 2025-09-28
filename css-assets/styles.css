@@ -52,14 +52,24 @@ body {
 
 h1, h2, h3, h4, h5, h6, p {
     text-align: left; /*sets all text to the left of the screen*/
+    margin: 0%;
     padding-left: 2rem; /*adds spacing between text and the edge of the screen*/
 }
 
 
+header, .containerGreen, .containerPink, .container, footer {
+    border-bottom: 0.0625rem solid #595959; /*underlines the section*/
+    font-size: 1.5vw; /*allows heading size to adapt depending on the screen size*/
+    margin: 0%;
+    box-sizing: border-box;
+}
+
 header {
     background-color: #f0cbc3; /*sets the backround colour*/
-    border-bottom: 0.0625rem solid #595959; /*underlines the section*/
-    font-size: 2vw; /*allows heading size to adapt depending on the screen size*/
+}
+
+.containerGreen {
+    background-color: #f3f6eb; /*sets the backround colour*/
 }
 
 .header-img {
@@ -67,8 +77,6 @@ header {
     height: auto;
     border-bottom: 0.0625rem solid #595959; /*underlines the section*/
 }
-
-
 
 @media (max-width: 600px) {
     .nav {
