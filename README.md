@@ -130,10 +130,13 @@ Webflow Team, 2025. How to design a homepage: 8 essentials for wowing your audie
 
 
 10. Changelog
+28 September 2025
+- css for header on homepage completed
+- changelog updated
 
 26 September 2025
 - css for navigation bar completed
-- changelog refined
+- changelog updated
 - reference list updated
 
 25 September 2025
@@ -145,16 +148,16 @@ Webflow Team, 2025. How to design a homepage: 8 essentials for wowing your audie
 
 27 Aug 2025
 - added code attribution to project
-- franchise.html completed
+- all franchise.html code completed
 - added README.md to project
 
 26 Aug 2025
 - page titles refined
-- images imported to project
-- homepage.html completed
-- menu.html completed
-- products.html completed
-- contact.html created and refined
+- all images imported to project
+- all homepage.html code completed
+- all menu.html code completed
+- all products.html code completed
+- all contact.html code completed and refined
 
 25 Aug 2025
 - project files and folders created
