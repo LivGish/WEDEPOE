@@ -56,12 +56,34 @@ h1, h2, h3, h4, h5, h6, p {
     padding-left: 2rem; /*adds spacing between text and the edge of the screen*/
 }
 
+.cardContainer {
+    display: flex; /*flex allows menu alignment to be controlled*/
+    flex-wrap: wrap; /*pushes menu to new line on smaller screens*/
+    align-items: center; /*puts menu items in the center of the bar*/
+    justify-content: center; 
+    gap: 1rem; /*adds space between menu items*/
+}
+
+.card {
+    background-color: #ffffff; /*sets the backround colour*/
+    border: 0.0625rem solid #595959; /*border colour*/
+    border-radius: 0.75rem; /*rounds the cards on the images*/
+    margin: 0.6rem;
+    padding: 0.875rem 1.25rem; /*Adds spacing around the card contents*/
+    text-align: center; /*Sets the text in the centre of the card*/
+    flex: 1 1 15%;
+}
+
+.card img {
+    border-radius: 1rem; /*rounds the corners on the images*/
+    border: 0.0625rem solid #595959; /*border colour*/}
 
 header, .containerGreen, .containerPink, .container, footer {
     border-bottom: 0.0625rem solid #595959; /*underlines the section*/
     font-size: 1.5vw; /*allows heading size to adapt depending on the screen size*/
     margin: 0%;
     box-sizing: border-box;
+    padding-bottom: 1rem;
 }
 
 header {
@@ -83,4 +105,18 @@ header {
         flex-direction: column; /*makes menu items stack vertically on small screens*/
          align-items: center; /*puts menu items in the center of the bar*/
     }
+
+    .cardContainer {
+        flex-direction: column; /*makes menu items stack vertically on small screens*/
+         align-items: center; /*puts menu items in the center of the bar*/
+    }
+
+    .card {
+        min-width: auto;
+        max-width: 95%;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+    padding-left: 1rem; /*adds spacing between text and the edge of the screen*/
+}
 }

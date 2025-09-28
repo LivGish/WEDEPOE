@@ -131,6 +131,8 @@ Webflow Team, 2025. How to design a homepage: 8 essentials for wowing your audie
 
 10. Changelog
 28 September 2025
+- spacing redone on html files
+- css for containers and images created
 - css for header on homepage completed
 - changelog updated
 
