@@ -10,14 +10,20 @@
 /*AUTHOR: afsaana03*/
 /*DATE: 26/09/2025*/
 /*VERSION: 1.7*/
-/*AVAILABLE: https://github.com/afsaana03/movieWeb
+/*AVAILABLE: https://github.com/afsaana03/movieWeb*/
 
+/*CODE ATTRIBUTION*/
+/*TITLE: CSS Styling Buttons*/
+/*AUTHOR: W3 schools*/
+/*DATE: 29/09/2025*/
+/*VERSION: 1.0*/
+/*AVAILABLE: https://www.w3schools.com/css/css3_buttons.asp*/
 
 /*Navigation bar styling*/
 .nav {
     list-style-type: none; /*removes bullet points*/
-    margin: 0;
-    padding: 0;
+    margin: 0; /*resets margins*/
+    padding: 0; /*reses padding*/
     background: #ffffff; /*sets background to white*/
     overflow: hidden;
     border-bottom: 0.0625rem solid #595959; /*underlines the section*/
@@ -42,6 +48,8 @@ ul.nav li a:hover {
     border-radius: 0.5rem; /*rounds corners on hover box*/
 }
 
+
+/*general typography styling*/
 body { 
     font-family: Georgia, serif; /*sets the website font*/
     background-color: #fff0f0; /*sets the backround colour*/
@@ -57,6 +65,8 @@ h1, h2, h3, h4, h5, h6, p {
     padding-right: 2rem; /*stops text from touching the right screen side*/
 }
 
+
+/*card styling*/
 .cardContainer {
     display: flex; /*flex allows menu alignment to be controlled*/
     flex-wrap: wrap; /*pushes menu to new line on smaller screens*/
@@ -71,22 +81,27 @@ h1, h2, h3, h4, h5, h6, p {
     border-radius: 0.75rem; /*rounds the cards on the images*/
     padding: 1.25rem; /*Adds spacing around the card contents*/
     text-align: center;
-    box-shadow: 0 4px 6px #f3f6eb;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .card img {
     border-radius: 1rem; /*rounds the corners on the images*/
-    border: 0.0625rem solid #595959; /*border colour*/}
+    border: 0.0625rem solid #595959; /*border colour*/
+}
 
+
+/*image styling*/
 .image {
     display: flex; /*flex allows menu alignment to be controlled*/
     flex-wrap: wrap; /*pushes menu to new line on smaller screens*/
     align-items: center; /*puts menu items in the center of the bar*/
     justify-content: center; 
     border-radius: 1rem; /*rounds the corners on the images*/
-    border: 0.0625rem solid #595959; /*border colour*/}
+    border: 0.0625rem solid #595959; /*border colour*/
+}
 
+
+/*basic container styling*/
 header, .containerGreen, .containerPink, .container, footer {
     border-bottom: 0.0625rem solid #595959; /*underlines the section*/
     font-size: 1.5vw; /*allows heading size to adapt depending on the screen size*/
@@ -103,12 +118,53 @@ header {
     background-color: #f3f6eb; /*sets the backround colour*/
 }
 
+.containerPink {
+    background-color: #fff0f0;  /*sets the backround colour*/
+}
+
+.container {
+    background-color: #f0cbc3;
+}
+
+
+/*header styling*/
 .header-img {
     width: 100%; /*sets the image size to match the screen size*/
     height: auto;
     border-bottom: 0.0625rem solid #595959; /*underlines the section*/
 }
 
+
+/*button styling*/
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+button {
+    padding: 12px 24px; 
+    background-color: #3c4f12; 
+    font-family: Georgia, serif; /*sets the website font*/
+    color: #ffffff;
+    border: 0.0625rem solid #3c4f12;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ffffff;
+    border: 0.0625rem solid #3c4f12;
+    color: #3c4f12;
+    transition: background-color 0.3s;
+}
+
+
+/*media tag styling (styling for small screens)*/
 @media (max-width: 600px) {
     .nav {
         flex-direction: column; /*makes menu items stack vertically on small screens*/
