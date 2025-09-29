@@ -118,7 +118,21 @@ Estimated budget for website:
 •	R2 000 p/m for the website maintenance (Web Partner, 2019).
 •	R245 p/m for the website host (Host Africa, 2025).
 
-9.	Bibliography
+9. Responsive screenshots
+Desktop
+
+
+
+Tablet
+
+
+
+Phone
+
+
+
+
+10.	Bibliography
 Afsaana03, 2025. moviWeb [code]. GitHub. Available at: https://github.com/afsaana03/movieWeb [accessed 26 September 2025]
  New Perspective Design, 2021. What Is The Cost Of Creating A Website In South Africa? [2025] | Website Design Prices South Africa | How Much Does Website Design In South Africa Cost? [online]. Available at: https://www.newperspec estudio.co.za/wp/what-is-the-cost-of-creating-a-website-in-south-africa/ [Accessed 15 August 2025].
  Web Partner, 2019. Average Monthly Fee for Website Maintenance in South Africa [online]. Available at: https://www.webpartner.co.za/blog/121-average-monthly-maintenance-fee [Accessed 15 August 2025].
