@@ -120,17 +120,26 @@ Estimated budget for website:
 
 9. Responsive screenshots
 Desktop
-
-
+![desktop 1](./_images/README-images/desktop-1.png)
+![desktop 2](./_images/README-images/desktop-2.png)
+![desktop 3](./_images/README-images/desktop-3.png)
+![desktop 4](./_images/README-images/desktop-4.png)
+![desktop 5](./_images/README-images/desktop-5.png)
+![desktop 6](./_images/README-images/desktop-6.png)
 
 Tablet
-
-
+![tablet 1](./_images/README-images/tablet-1.png)
+![tablet 2](./_images/README-images/tablet-2.png)
+![tablet 3](./_images/README-images/tablet-3.png)
+![tablet 4](./_images/README-images/tablet-4.png)
+![tablet 5](./_images/README-images/tablet-5.png)
 
 Phone
-
-
-
+![phone 1](./_images/README-images/phone-1.png)
+![phone 2](./_images/README-images/phone-2.png)
+![phone 3](./_images/README-images/phone-3.png)
+![phone 4](./_images/README-images/phone-4.png)
+![phone 5](./_images/README-images/phone-5.png)
 
 10.	Bibliography
 Afsaana03, 2025. moviWeb [code]. GitHub. Available at: https://github.com/afsaana03/movieWeb [accessed 26 September 2025]
