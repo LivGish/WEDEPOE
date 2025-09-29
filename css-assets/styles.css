@@ -72,6 +72,8 @@ h1, h2, h3, h4, h5, h6, p {
     flex-wrap: wrap; /*pushes menu to new line on smaller screens*/
     align-items: center; /*puts menu items in the center of the bar*/
     justify-content: center; 
+    text-align: center;
+    padding: 1rem; /*adds space round the cards*/
     gap: 1rem; /*adds space between menu items*/
 }
 
@@ -80,8 +82,9 @@ h1, h2, h3, h4, h5, h6, p {
     border: 0.0625rem solid #595959; /*border colour*/
     border-radius: 0.75rem; /*rounds the cards on the images*/
     padding: 1.25rem; /*Adds spacing around the card contents*/
-    text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+    width: 20rem;
 }
 
 .card img {
@@ -131,7 +134,7 @@ header {
 .header-img {
     width: 100%; /*sets the image size to match the screen size*/
     height: auto;
-    border-bottom: 0.0625rem solid #595959; /*underlines the section*/
+    padding-bottom: 1rem;
 }
 
 
