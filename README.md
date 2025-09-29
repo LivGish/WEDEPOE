@@ -120,6 +120,7 @@ Estimated budget for website:
 
 9. Responsive screenshots
 Desktop
+
 ![desktop 1](./_images/README-images/desktop-1.png)
 ![desktop 2](./_images/README-images/desktop-2.png)
 ![desktop 3](./_images/README-images/desktop-3.png)
@@ -128,6 +129,7 @@ Desktop
 ![desktop 6](./_images/README-images/desktop-6.png)
 
 Tablet
+
 ![tablet 1](./_images/README-images/tablet-1.png)
 ![tablet 2](./_images/README-images/tablet-2.png)
 ![tablet 3](./_images/README-images/tablet-3.png)
@@ -135,6 +137,7 @@ Tablet
 ![tablet 5](./_images/README-images/tablet-5.png)
 
 Phone
+
 ![phone 1](./_images/README-images/phone-1.png)
 ![phone 2](./_images/README-images/phone-2.png)
 ![phone 3](./_images/README-images/phone-3.png)
@@ -143,16 +146,38 @@ Phone
 
 10.	Bibliography
 Afsaana03, 2025. moviWeb [code]. GitHub. Available at: https://github.com/afsaana03/movieWeb [accessed 26 September 2025]
- New Perspective Design, 2021. What Is The Cost Of Creating A Website In South Africa? [2025] | Website Design Prices South Africa | How Much Does Website Design In South Africa Cost? [online]. Available at: https://www.newperspec estudio.co.za/wp/what-is-the-cost-of-creating-a-website-in-south-africa/ [Accessed 15 August 2025].
- Web Partner, 2019. Average Monthly Fee for Website Maintenance in South Africa [online]. Available at: https://www.webpartner.co.za/blog/121-average-monthly-maintenance-fee [Accessed 15 August 2025].
+
+New Perspective Design, 2021. What Is The Cost Of Creating A Website In South Africa? [2025] | Website Design Prices South Africa | How Much Does Website Design In South Africa Cost? [online]. Available at: https://www.newperspec estudio.co.za/wp/what-is-the-cost-of-creating-a-website-in-south-africa/ [Accessed 15 August 2025].
+
+Web Partner, 2019. Average Monthly Fee for Website Maintenance in South Africa [online]. Available at: https://www.webpartner.co.za/blog/121-average-monthly-maintenance-fee [Accessed 15 August 2025].
+
 Coolors, 2025. Love Matcha mock up colour palette. [online] Available at: https://coolors.co/user/palettes/689dacb7cccf77000b16548c [Accessed 14 August 2025].
+
 Host Africa, 2025. Fast, Reliable and Secure Web Hosting in South Africa. [online]. Available at: https://hostafrica.co.za/web-hosting [Accessed 15 August 2025].
+
 Love Matcha, 2025. Love matcha [online] Available at: https://love-matcha.co.za [Accessed 12 August 2025].
+
 Sklyanik, V., 2021. 21 KPI examples every business needs to know. [online] Wix Blog. Available at: https://www.wix.com/blog/kpi-examples [Accessed 14 August 2025].
+
+W3Schools. [2025] CSS Styling Buttons. Version 1.0. Dated 29 September 2025. Available at: https://www.w3schools.com/css/css3_buttons.asp [Accessed: 29 September 2025].
+
+W3Schools. [2025] HTML <button> tag. Version 1.0. Dated 29 September 2025. Available at: https://www.w3schools.com/tags/tag_button.asp
+ [Accessed: 29 September 2025].
+
 Webflow Team, 2025. How to design a homepage: 8 essentials for wowing your audience  [online]. Available at: https://webflow.com/blog/design-a-homepage [Accessed 14 August 2025].
 
 
 10. Changelog
+29 Spetember 2025
+- changelog updated
+- references and screenshots added and updated
+- css comments edited
+- media tag updated and refined
+- css forms refined
+- css cards refined
+- html buttons added and refined in css
+- image formatting refined
+
 28 September 2025
 - spacing redone on html files
 - css for containers and images created
