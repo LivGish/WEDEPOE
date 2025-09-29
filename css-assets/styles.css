@@ -126,11 +126,11 @@ header {
 }
 
 .containerPink {
-    background-color: #fff0f0;  /*sets the backround colour*/
+    background-color: #fff0f0; /*sets the backround colour*/
 }
 
 .container {
-    background-color: #f0cbc3;
+    background-color: #f0cbc3; /*sets the backround colour*/
 }
 
 
@@ -196,16 +196,17 @@ input, textarea {
     text-align: left;
 }
 
+
+/*location styling*/
 .location {
     margin: 3rem;
     border-bottom: 0.00025rem solid #595959; /*underlines the section*/
-
     padding-top: 1rem;
 }
 
 .location iframe {
     width: 50%; /*sets the image size to match the screen size*/
-    height: auto;
+    height: 10%;
     padding-left: 1rem;
     padding-bottom: 2rem;
 
@@ -225,11 +226,43 @@ input, textarea {
     }
 
     .card {
-        min-width: auto;
-        max-width: 95%;
+        width: 50%;
+        padding: 0.75rem; /*Adds spacing around the card contents*/
+
     }
 
+    .card img {
+        width: 25%; /*sets the image size to match the screen size*/
+        height: 25%;
+        border-radius: 0.5rem; /*rounds the corners on the images*/
+        }
+
     h1, h2, h3, h4, h5, h6, p {
-    padding-left: 1rem; /*adds spacing between text and the edge of the screen*/
+        padding-left: 1rem; /*adds spacing between text and the edge of the screen*/
+    }
+
+    .location {
+        margin: 1rem;
+        border-bottom: 0.00025rem solid #595959; /*underlines the section*/
+        padding-top: 0.5rem;
+    }
+
+    .location iframe {
+        width: 50%; /*sets the image size to match the screen size*/
+        height: 7rem;
+        padding-left: 0.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .image {
+    width: 25%; /*sets the image size to match the screen size*/
+    height: auto;
+    }
+
+    button {
+    padding: 0.35rem 0.75rem; 
+    font-size: 85%;
+    }
+
 }
-}
+
