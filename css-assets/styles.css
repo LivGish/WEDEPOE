@@ -84,12 +84,12 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 1.25rem; /*Adds spacing around the card contents*/
     transition: transform 0.2s, box-shadow 0.2s;
     box-sizing: border-box;
-    width: 20rem;
+    width: 20rem; /*sets the card width*/
 }
 
 .card img {
-    width: 50%; /*sets the image size to match the screen size*/
-    height: 50%;
+    width: 50%; /*sets the image width*/
+    height: 50%; /*sets the image height*/
     border-radius: 1rem; /*rounds the corners on the images*/
     border: 0.0625rem solid #595959; /*border colour*/
 }
@@ -97,11 +97,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 /*image styling*/
 .image {
-    width: 50%; /*sets the image size to match the screen size*/
-    height: auto;
+    width: 50%;  /*sets the image width*/
+    height: auto;  /*sets the image height*/
     display: flex; /*flex allows menu alignment to be controlled*/
     flex-wrap: wrap; /*pushes menu to new line on smaller screens*/
-    align-items: center; /*puts menu items in the center of the bar*/
+    align-items: center; /*puts item in the center of the container*/
     justify-content: center; 
     border-radius: 1rem; /*rounds the corners on the images*/
     border: 0.0625rem solid #595959; /*border colour*/
@@ -112,9 +112,9 @@ h1, h2, h3, h4, h5, h6, p {
 header, .containerGreen, .containerPink, .container, footer {
     border-bottom: 0.0625rem solid #595959; /*underlines the section*/
     font-size: 1.5vw; /*allows heading size to adapt depending on the screen size*/
-    margin: 0%;
+    margin: 0%; /*resets default margins*/
     box-sizing: border-box;
-    padding-bottom: 1rem;
+    padding-bottom: 1rem; /*adds padding to the bottom of the containers*/
 }
 
 header {
@@ -136,79 +136,78 @@ header {
 
 /*header styling*/
 .header-img {
-    width: 100%; /*sets the image size to match the screen size*/
-    height: auto;
-    padding-bottom: 1rem;
+    width: 100%;  /*sets the image width*/
+    height: auto; /*sets the image height*/
+    padding-bottom: 1rem; /*adds padding to the bottom of the image*/
 }
 
 
 /*button styling*/
 .buttonContainer {
-    display: flex;
+    display: flex; /*flex allows menu alignment to be controlled*/
     justify-content: center;
-    align-items: center;
-    padding: 1rem;
+    align-items: center; /*puts item in the center of the container*/
+    padding: 1rem; /*adds padding to the bottom of the container*/
 }
 
 button {
-    padding: 0.7rem 1.5rem; 
-    background-color: #3c4f12; 
+    padding: 0.7rem 1.5rem; /*adds padding to the sides of the button*/
+    background-color: #3c4f12; /*sets the backround colour*/
     font-family: Georgia, serif; /*sets the website font*/
-    color: #ffffff;
-    border: 0.0625rem solid #3c4f12;
-    border: none;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    color: #ffffff;  /*text colour*/
+    border: 0.0625rem solid #3c4f12; /*sets the border thickness and colour*/
+    border-radius: 0.5rem; /*rounds the button corners*/
+    cursor: pointer; /*changes the default pointer*/
+    font-weight: bold; /*makes the text bold*/
+    transition: background-color 0.3s; /*adds a colour transition*/
 }
 
 button:hover {
-    background-color: #ffffff;
-    border: 0.0625rem solid #3c4f12;
-    color: #3c4f12;
-    transition: background-color 0.3s;
+    background-color: #ffffff; /*sets the backround colour*/
+    border: 0.0625rem solid #3c4f12; /*sets the border thickness and colour*/
+    color: #3c4f12; /*text colour*/
+    transition: background-color 0.3s; /*adds a colour transition*/
 }
 
 
 /*form styling*/
 form {
-    display: flex;
-    flex-direction: column;
+    display: flex; /*flex allows menu alignment to be controlled*/
+    flex-direction: column; /*stacks everything vertically*/
     align-items: flex-start; /* Align elements to left */
-    margin: 1.25rem auto;
-    width: 80%;
+    margin: 1.25rem auto; /*adds a margin*/
+    width: 80%; /*sets the image width*/
 }
 
 input, textarea {
     font-family: Georgia, serif; /*sets the  font*/
-    width: 100%;
-    padding: 0.5rem;
-    margin-top: 0.25rem;
-    margin-bottom: 1rem;
-    border-radius: 0.5rem;
-    border: 0.0625rem solid #3c4f12;
-    background-color: #ffffff;
-    color: #595959;
+    width: 100%; /*sets the image width*/
+    padding: 0.5rem; /*adds padding*/
+    margin-top: 0.25rem; /*adds a margin to the top*/
+    margin-bottom: 1rem; /*adds a margin to the top*/
+    border-radius: 0.5rem; /*rounds the corners*/
+    border: 0.0625rem solid #3c4f12; /*sets the border thickness and colour*/
+    background-color: #ffffff; /*sets the backround colour*/
+    color: #595959; /*text colour*/
 }
 
 ::placeholder {
-    text-align: left;
+    text-align: left; /*keeps the text to the left*/
 }
 
 
 /*location styling*/
 .location {
-    margin: 3rem;
+    margin: 3rem; /*adds a margin*/
     border-bottom: 0.00025rem solid #595959; /*underlines the section*/
-    padding-top: 1rem;
+    padding-top: 1rem; /*adds padding to the top*/
 }
 
 .location iframe {
-    width: 50%; /*sets the image size to match the screen size*/
-    height: 10%;
-    padding-left: 1rem;
-    padding-bottom: 2rem;
+    width: 50%; /*sets the width*/
+    height: 10%; /*sets the height*/
+    padding-left: 1rem; /*adds padding to the left*/
+    padding-bottom: 2rem; /*adds padding to the bottom*/
 
 }
 
@@ -226,42 +225,41 @@ input, textarea {
     }
 
     .card {
-        width: 50%;
+        width: 15rem; /*sets the card width*/
         padding: 0.75rem; /*Adds spacing around the card contents*/
-
     }
 
     .card img {
-        width: 25%; /*sets the image size to match the screen size*/
-        height: 25%;
+        width: 25%; /*sets the width*/
+        height: 25%; /*sets the height*/
         border-radius: 0.5rem; /*rounds the corners on the images*/
-        }
+    }
 
     h1, h2, h3, h4, h5, h6, p {
         padding-left: 1rem; /*adds spacing between text and the edge of the screen*/
     }
 
     .location {
-        margin: 1rem;
+        margin: 1rem; /*adds a margin*/
         border-bottom: 0.00025rem solid #595959; /*underlines the section*/
-        padding-top: 0.5rem;
+        padding-top: 0.5rem; /*adds padding to the top*/
     }
 
     .location iframe {
-        width: 50%; /*sets the image size to match the screen size*/
-        height: 7rem;
-        padding-left: 0.5rem;
-        padding-bottom: 1rem;
+        width: 50%; /*sets the width*/
+        height: 7rem; /*sets the height*/
+        padding-left: 0.5rem; /*adds padding to the left*/
+        padding-bottom: 1rem; /*adds padding to the bottom*/
     }
 
     .image {
     width: 25%; /*sets the image size to match the screen size*/
-    height: auto;
+    height: auto; /*sets the height*/
     }
 
     button {
-    padding: 0.35rem 0.75rem; 
-    font-size: 85%;
+    padding: 0.35rem 0.75rem; /*adds padding*/
+    font-size: 85%; /*sets the font size*/
     }
 
 }
