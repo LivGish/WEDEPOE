@@ -32,7 +32,7 @@ ul.nav li a {
     text-decoration: none;  /* Removes the underline from the links */
     display: flex; /*flex allows menu alignment to be controlled*/
     padding: 0.875rem 1.25rem; /*Adds spacing around the link for a box*/
-    font-weight: bold;
+    font-weight: bold; /*makes font bold*/
     transition: background-color 0.3s, color 0.3s; /*block transition when you hover over different menu items*/
 }
 
@@ -45,15 +45,16 @@ ul.nav li a:hover {
 body { 
     font-family: Georgia, serif; /*sets the website font*/
     background-color: #fff0f0; /*sets the backround colour*/
-    margin: 0%;
-    padding: 0%;
+    margin: 0%; /*resets margins*/
+    padding: 0%; /*resets padding*/
     color: #595959; /*text colour*/
 }
 
 h1, h2, h3, h4, h5, h6, p {
     text-align: left; /*sets all text to the left of the screen*/
-    margin: 0%;
-    padding-left: 2rem; /*adds spacing between text and the edge of the screen*/
+    margin: 0%; /*resets margins*/
+    padding-left: 2rem; /*stops text from touching the left screen side*/
+    padding-right: 2rem; /*stops text from touching the right screen side*/
 }
 
 .cardContainer {
@@ -68,13 +69,21 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #ffffff; /*sets the backround colour*/
     border: 0.0625rem solid #595959; /*border colour*/
     border-radius: 0.75rem; /*rounds the cards on the images*/
-    margin: 0.6rem;
-    padding: 0.875rem 1.25rem; /*Adds spacing around the card contents*/
-    text-align: center; /*Sets the text in the centre of the card*/
-    flex: 1 1 15%;
+    padding: 1.25rem; /*Adds spacing around the card contents*/
+    text-align: center;
+    box-shadow: 0 4px 6px #f3f6eb;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .card img {
+    border-radius: 1rem; /*rounds the corners on the images*/
+    border: 0.0625rem solid #595959; /*border colour*/}
+
+.image {
+    display: flex; /*flex allows menu alignment to be controlled*/
+    flex-wrap: wrap; /*pushes menu to new line on smaller screens*/
+    align-items: center; /*puts menu items in the center of the bar*/
+    justify-content: center; 
     border-radius: 1rem; /*rounds the corners on the images*/
     border: 0.0625rem solid #595959; /*border colour*/}
 
