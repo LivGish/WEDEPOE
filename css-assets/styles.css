@@ -210,6 +210,41 @@ input, textarea {
     padding-bottom: 2rem; /*adds padding to the bottom*/
 }
 
+/* Accordion styling*/
+.accordion {
+    display: flex; /*flex allows menu alignment to be controlled*/
+    flex-wrap: wrap; /*pushes menu to new line on smaller screens*/
+    align-items: center; /*puts item in the center of the container*/
+    justify-content: center; 
+}
+
+.accordion-btn {
+    border-radius: 0.1rem; /*rounds the button corners*/
+    padding: 12px 24px;
+    width: 70%;
+    background-color: #3c4f12;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 0.3rem;
+}
+
+.active, .accordion-btn:hover {
+    background-color: #687943;
+}
+
+.panel {
+    padding: 12px 24px;
+    width: 65%;
+    background-color: #a8bb80;
+    color: #000;
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
 
 /*media tag styling (styling for small screens)*/
 @media (max-width: 600px) {
