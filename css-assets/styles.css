@@ -92,6 +92,7 @@ h1, h2, h3, h4, h5, h6, p {
     height: 50%; /*sets the image height*/
     border-radius: 1rem; /*rounds the corners on the images*/
     border: 0.0625rem solid #595959; /*border colour*/
+    margin-bottom: 1rem;
 }
 
 
@@ -111,7 +112,6 @@ h1, h2, h3, h4, h5, h6, p {
 /*basic container styling*/
 header, .containerGreen, .containerPink, .container, footer {
     border-bottom: 0.0625rem solid #595959; /*underlines the section*/
-    font-size: 1.5vw; /*allows heading size to adapt depending on the screen size*/
     margin: 0%; /*resets default margins*/
     box-sizing: border-box;
     padding-bottom: 1rem; /*adds padding to the bottom of the containers*/
@@ -181,7 +181,7 @@ form {
 
 input, textarea {
     font-family: Georgia, serif; /*sets the  font*/
-    width: 100%; /*sets the image width*/
+    width: 100%; /*sets the input width*/
     padding: 0.5rem; /*adds padding*/
     margin-top: 0.25rem; /*adds a margin to the top*/
     margin-bottom: 1rem; /*adds a margin to the top*/
@@ -208,7 +208,6 @@ input, textarea {
     height: 10%; /*sets the height*/
     padding-left: 1rem; /*adds padding to the left*/
     padding-bottom: 2rem; /*adds padding to the bottom*/
-
 }
 
 
@@ -225,18 +224,20 @@ input, textarea {
     }
 
     .card {
-        width: 15rem; /*sets the card width*/
+        width: 12rem; /*sets the card width*/
         padding: 0.75rem; /*Adds spacing around the card contents*/
     }
 
     .card img {
-        width: 25%; /*sets the width*/
-        height: 25%; /*sets the height*/
+        width: 35%; /*sets the width*/
+        height: 35%; /*sets the height*/
         border-radius: 0.5rem; /*rounds the corners on the images*/
+        margin-bottom: 0.5rem;
     }
 
     h1, h2, h3, h4, h5, h6, p {
         padding-left: 1rem; /*adds spacing between text and the edge of the screen*/
+        font-size: 2vw;
     }
 
     .location {
@@ -253,14 +254,22 @@ input, textarea {
     }
 
     .image {
-    width: 25%; /*sets the image size to match the screen size*/
-    height: auto; /*sets the height*/
+        width: 25%; /*sets the image size to match the screen size*/
+        height: auto; /*sets the height*/
     }
 
     button {
-    padding: 0.35rem 0.75rem; /*adds padding*/
-    font-size: 85%; /*sets the font size*/
+        padding: 0.35rem 0.75rem; /*adds padding*/
+        font-size: 85%; /*sets the font size*/
     }
 
-}
+    ul.nav li a{
+        font-size: 65%;
+        padding: 0.55rem 1.25rem;
+    }
 
+    .cardContainer {
+    padding: 0.5rem; /*adds space round the cards*/
+    gap: 0.5rem; /*adds space between menu items*/
+}
+}
