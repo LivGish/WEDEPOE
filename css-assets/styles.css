@@ -247,6 +247,42 @@ input, textarea {
     transition: max-height 0.2s ease-out;
 }
 
+/*Tab styling*/
+.tab {
+    overflow: hidden;
+    border-top: 1px solid #595959;
+    border-bottom: 1px solid #595959;
+    background-color: #f0cbc3;
+}
+
+.tab button {
+    border-radius: 0rem;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover {
+    background-color: #fff0f0;
+    color: #000
+}
+
+.tab button.active {
+    background-color: #fff0f0;
+    color: #000
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #595959;
+    border-top: none;
+}
+
 /*media tag styling (styling for small screens)*/
 @media (max-width: 600px) {
 
