@@ -159,10 +159,13 @@ Love Matcha, 2025. Love matcha [online] Available at: https://love-matcha.co.za 
 
 Sklyanik, V., 2021. 21 KPI examples every business needs to know. [online] Wix Blog. Available at: https://www.wix.com/blog/kpi-examples [Accessed 14 August 2025].
 
-W3Schools. [2025] CSS Styling Buttons. Version 1.0. Dated 29 September 2025. Available at: https://www.w3schools.com/css/css3_buttons.asp [Accessed: 29 September 2025].
+W3Schools. [2025] CSS Styling Buttons. [online]. Available at: https://www.w3schools.com/css/css3_buttons.asp [Accessed: 29 September 2025].
 
-W3Schools. [2025] HTML <button> tag. Version 1.0. Dated 29 September 2025. Available at: https://www.w3schools.com/tags/tag_button.asp
- [Accessed: 29 September 2025].
+W3Schools, 2025. HTML <button> tag. [online] Available at: https://www.w3schools.com/tags/tag_button.asp [Accessed: 29 September 2025].
+
+W3Schools, 2025. Accordions [online] Available at: <https://www.w3schools.com/howto/howto_js_accordion.asp> [Accessed 28 October 2025].
+
+‌
 
 Webflow Team, 2025. How to design a homepage: 8 essentials for wowing your audience  [online]. Available at: https://webflow.com/blog/design-a-homepage [Accessed 14 August 2025].
 

@@ -1,3 +1,10 @@
+/*CODE ATTRIBUTION*/
+/*TITLE: Accordions*/
+/*AUTHOR: W3 schools*/
+/*DATE: 28/10/2025*/
+/*VERSION: 1.0*/
+/*AVAILABLE: https://www.w3schools.com/howto/howto_js_accordion.asp*/
+
 // Accordion
 var acc = document.getElementsByClassName("accordion-btn");
 var i;

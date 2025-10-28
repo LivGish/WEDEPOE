@@ -233,11 +233,12 @@ input, textarea {
 
 .active, .accordion-btn:hover {
     background-color: #687943;
+    color: #fff;
 }
 
 .panel {
     padding: 12px 24px;
-    width: 65%;
+    width: 65.3%;
     background-color: #a8bb80;
     color: #000;
     display: none;
@@ -248,10 +249,6 @@ input, textarea {
 
 /*media tag styling (styling for small screens)*/
 @media (max-width: 600px) {
-    .nav {
-        flex-direction: column; /*makes menu items stack vertically on small screens*/
-         align-items: center; /*puts menu items in the center of the bar*/
-    }
 
     .cardContainer {
         flex-direction: column; /*makes menu items stack vertically on small screens*/
@@ -306,5 +303,19 @@ input, textarea {
     .cardContainer {
     padding: 0.5rem; /*adds space round the cards*/
     gap: 0.5rem; /*adds space between menu items*/
+}
+
+.accordion-btn {
+    border-radius: 0.1rem; /*rounds the button corners*/
+    padding: 12px 24px;
+    width: 70%;
+    margin-top: 0.15rem;
+    font-size: 65%;
+}
+
+.panel {
+    padding: 12px 24px;
+    width: 61.5%;
+    font-size: 65%;
 }
 }
