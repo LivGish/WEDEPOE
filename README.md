@@ -166,9 +166,12 @@ W3Schools. [2025] HTML <button> tag. Version 1.0. Dated 29 September 2025. Avail
 
 Webflow Team, 2025. How to design a homepage: 8 essentials for wowing your audience  [online]. Available at: https://webflow.com/blog/design-a-homepage [Accessed 14 August 2025].
 
-
 10. Changelog
-29 Spetember 2025
+28 October 2025
+- part 1 feedback reflection added to README
+- part 2 feedback reflection added to README
+
+29 September 2025
 - changelog updated
 - references and screenshots added and updated
 - css comments edited
@@ -184,7 +187,7 @@ Webflow Team, 2025. How to design a homepage: 8 essentials for wowing your audie
 - css for header on homepage completed
 - changelog updated
 
-26 September 2025
+26 September 2025  
 - css for navigation bar completed
 - changelog updated
 - reference list updated
@@ -195,7 +198,7 @@ Webflow Team, 2025. How to design a homepage: 8 essentials for wowing your audie
 
 18 Sept 2025
 - recommitted all files into a new repository
-
+                         
 27 Aug 2025
 - added code attribution to project
 - all franchise.html code completed
@@ -212,3 +215,11 @@ Webflow Team, 2025. How to design a homepage: 8 essentials for wowing your audie
 25 Aug 2025
 - project files and folders created
 - page navigation created
+
+11. Part 1 feedback reflection
+For part 1 of my project, there were a few components identified in which I could have improved upon before my project was submitted, the main one being that a changelog was not added. This was a crucial step missed not only because it allows me to keep track of the progress I have made throughout my project, but it allows others to see how I have progressed through my project and the order in which I carried out my work. The changelog for all work previously done was added after receiving feedback from part 1, and it was updated alongside any changes made throughout the process of creating the code for part 2.
+Another area that could've been improved on before part 1 was submitted was my grammar. While marks were not deducted for this, I felt as though this lowered the quality of my work. Once I began work for part 2, many gramatical errors were found and corrected, and I will be more cautious with my grammar going forward. 
+
+12. Part 2 feedback reflection
+There were multiple places in part 2 where I could have improved the quality of my work, the first being a misunderstanding of how to reflect on feedback from part 1. In part 2, I implimented all corrections to my code without writing a report on them, which would've allowed others to see how I reflected on and corrected any previous errors. Reports on feedback reflection were added for both parts 1 and 2 following the release of part 2 feedback.
+The website's resposiveness, specifically with typography and images, could've been improved on aswell, such as ensuring that both the images and text shrink down with the window size so that everything stays propotionate. These corrections were carried out following the release of part 2 feedback.
