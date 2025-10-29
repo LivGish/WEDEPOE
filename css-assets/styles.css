@@ -385,6 +385,36 @@ input, textarea {
     font-size: 1.4rem; /*sets the font size*/
 }
 
+/* Vertical tab layout for small screens */
+.tabContainer {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+}
+
+.tab {
+    float: none;
+    width: 30%;
+    border: none;
+    border: 0.0625rem solid #969696;
+}
+
+.tab button {
+    display: block;
+    width: 100%;
+    float: none;
+    text-align: left;
+    padding: 10px 12px;
+    font-size: 65%;
+}
+
+.tabcontent {
+    width: 70%;
+    padding: 10px;
+    border-left: none;
+    font-size: 65%;
+}
+
 }
 
 @media (min-width: 900px) {
