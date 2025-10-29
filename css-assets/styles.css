@@ -110,15 +110,11 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 /*basic container styling*/
-header, .containerGreen, .containerPink, .container, footer {
+.containerGreen, .containerPink, .container, footer {
     border-bottom: 0.0625rem solid #595959; /*underlines the section*/
     margin: 0%; /*resets default margins*/
     box-sizing: border-box;
     padding-bottom: 1rem; /*adds padding to the bottom of the containers*/
-}
-
-header {
-    background-color: #f0cbc3; /*sets the backround colour*/
 }
 
 .containerGreen {
@@ -138,14 +134,32 @@ header {
 .header-img {
     width: 100%;  /*sets the image width*/
     height: auto; /*sets the image height*/
-    padding-bottom: 1rem; /*adds padding to the bottom of the image*/
+    border-bottom: 0.0625rem solid #595959; /*underlines the section*/
+    filter: opacity(80%); /*makes the image slightly transparent*/
+}
+
+.headerContainer {
+    position: relative; /*allows absolute positioning of child elements*/
+    text-align: center; /*centers the text*/
+    color: white;  /*text colour*/
+}
+
+.header-text {
+    font-family: Georgia, serif; /*sets the website font*/
+    color: #30410a; /*text colour*/
+    font-size: 1.75rem; /*sets the font size*/
+    text-align: center; /*centers the text*/
+    padding-right: 60%; /*adds padding to the bottom of the text*/
+    position: absolute; /*allows precise positioning*/
+    top: 2.5rem; /*sets the distance from the top*/
+    left: 16px; /*sets the distance from the left*/
 }
 
 
 /*button styling*/
 .buttonContainer {
     display: flex; /*flex allows menu alignment to be controlled*/
-    justify-content: center;
+    justify-content: center; /*centers the button horizontally*/
     align-items: center; /*puts item in the center of the container*/
     padding: 1rem; /*adds padding to the bottom of the container*/
 }
@@ -365,5 +379,19 @@ input, textarea {
     padding: 12px 24px;
     width: 61.5%;
     font-size: 65%;
+}
+
+.header-text {
+    font-size: 1.4rem; /*sets the font size*/
+}
+
+}
+
+@media (min-width: 900px) {
+    .header-text {
+    font-size: 3rem; /*sets the font size*/
+    position: absolute; /*allows precise positioning*/
+    top: 6rem; /*sets the distance from the top*/
+    left: 16px; /*sets the distance from the left*/
 }
 }
