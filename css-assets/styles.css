@@ -220,67 +220,79 @@ input, textarea {
 
 .accordion-btn {
     border-radius: 0.1rem; /*rounds the button corners*/
-    padding: 12px 24px;
-    width: 70%;
-    background-color: #3c4f12;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
-    margin-top: 0.3rem;
+    padding: 12px 24px; /*adds padding*/
+    width: 70%; /*sets the width*/
+    background-color: #3c4f12; /*sets the backround colour*/
+    color: #fff; /*text colour*/
+    border: none; /*removes default button border*/
+    cursor: pointer; /*changes the default pointer*/
+    font-weight: bold; /*makes the text bold*/
+    transition: background-color 0.3s; /*adds a colour transition*/
+    margin-top: 0.3rem; /*adds margin to the top*/
 }
 
 .active, .accordion-btn:hover {
-    background-color: #687943;
-    color: #fff;
+    background-color: #687943; /*sets the backround colour*/
+    color: #fff; /*text colour*/
 }
 
 .panel {
-    padding: 12px 24px;
-    width: 65.3%;
-    background-color: #a8bb80;
-    color: #000;
-    display: none;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    padding: 12px 24px; /*adds padding*/
+    width: 65.3%; /*sets the width*/ 
+    background-color: #a8bb80; /*sets the backround colour*/  
+    color: #000; /*text colour*/
+    display: none; /*hides the panel by default*/
+    max-height: 0; /*sets the max height to 0*/
+    overflow: hidden; /*hides overflow content*/
+    transition: max-height 0.2s ease-out; /*adds a transition effect*/
 }
 
 /*Tab styling*/
+.tabContainer {
+    margin: 0 auto;
+    width: 80%; /*sets the width*/
+    border: 0.0625rem solid #595959; /*underlines the section*/
+    background-color: #f3f6eb; /*sets the backround colour*/
+    padding: 0.5rem; /*adds padding*/
+
+}
+
 .tab {
-    overflow: hidden;
-    border-top: 1px solid #595959;
-    border-bottom: 1px solid #595959;
-    background-color: #f0cbc3;
+    overflow: hidden; /*clears floats*/
+    border: 0.0625rem solid #969696; /*sets the border thickness and colour*/
+    background-color: #f0cbc3; /*sets the backround colour*/
+    margin: 0 auto; /*centers the tab section*/
 }
 
 .tab button {
-    border-radius: 0rem;
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
+    border-radius: 0rem; /*removes button rounding*/
+    background-color: inherit; /*sets the backround colour to match the tab section*/
+    float: left; /*aligns buttons to the left*/
+    border: none; /*removes default button border*/
+    outline: none; /*removes default button outline*/
+    cursor: pointer; /*changes the default pointer*/
+    padding: 14px 16px; /*adds padding to the button*/
+    transition: 0.3s; /*adds a transition to the button*/
 }
 
 .tab button:hover {
-    background-color: #fff0f0;
-    color: #000
+    background-color: #fff0f0; /*sets the backround colour*/
+    color: #000 /*text colour*/
 }
 
 .tab button.active {
-    background-color: #fff0f0;
-    color: #000
+    background-color: #fff0f0; /*sets the backround colour*/
+    color: #000 /*text colour*/
 }
 
 .tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #595959;
-    border-top: none;
+    display: none; /*hides the tab content by default*/
+    padding: 6px 12px; /*adds padding*/
+    border-top: none; /*removes the top border*/
+}
+
+.tabcontent ul {
+    list-style-type: none; /*removes bullet points*/
 }
 
 /*media tag styling (styling for small screens)*/

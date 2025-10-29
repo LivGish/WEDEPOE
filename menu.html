@@ -30,52 +30,84 @@
             </ul>
 
         <div class="containerPink">
-            <br>
-            <h1>Menu</h1>
-            <br>
+                <br>
+                <h1>Menu</h1>
+                <br>
 
-            <!-- Tab links -->
-            <div class="tab">
-            <button class="tablinks" onclick="openmenu(event, 'Matcha-lattes')" id="defaultOpen">Matcha lattes</button>
-            <button class="tablinks" onclick="openmenu(event, 'Matcha-mocktails')">Matcha mocktails</button>
-            <button class="tablinks" onclick="openmenu(event, 'Hot-matcha-lattes')">Hot matcha lattes</button>
+                <div class="tabContainer">
+                <!-- Tab links -->
+                <div class="tab">
+                <button class="tablinks" onclick="openMenu(event, 'Full-menu')" id="defaultOpen">Full menu</button>
+                <button class="tablinks" onclick="openMenu(event, 'Iced-matcha-lattes')">Iced matcha lattes</button>
+                <button class="tablinks" onclick="openMenu(event, 'Matcha-mocktails')">Matcha mocktails</button>
+                <button class="tablinks" onclick="openMenu(event, 'Hot-matcha-lattes')">Hot matcha lattes</button>
+                </div>
+
+                <!-- Tab content -->
+                <div id="Full-menu" class="tabcontent">
+                    <ul>
+                        <h3>Iced Matcha Lattes</h3>
+                        <li>Plain Matcha Latte - R60</li>
+                        <li>Rose Matcha Latte - R80</li>
+                        <li>Colourful Matcha Latte - R80</li>
+                        <li>Pineapple Matcha Latte - R80</li>
+                        <li>Blueberry Matcha Latte - R80</li>
+                        <li>Mango Matcha Latte - R80</li>
+                        <li>Strawberry Matcha Latte - R80</li>
+
+                        <br>
+
+                        <h3>Matcha mocktails</h3>
+                        <li>Matcha Lemonade - R60</li>
+                        <li>Strawberry & Pineapple - R80</li>
+                        <li>Almond & Strawberry - R80</li>
+                        <li>Blueberry & Lemon - R80</li>
+                        <li>Strawberry & Lemon - R80</li>
+
+                        <br>
+
+                        <h3>Hot matcha lattes</h3>
+                        <li>Plain Hot Matcha - R60</li>
+                        <li>Vanilla Hot Matcha - R70</li>
+                        <li>Hazelnut Hot Matcha - R70</li>
+                        <li>Caramel Hot Matcha - R70</li>
+
+                    </ul>
+                </div>
+
+                <div id="Iced-matcha-lattes" class="tabcontent">
+                    <ul>
+                        <li>Plain Matcha Latte - R60</li>
+                        <li>Rose Matcha Latte - R80</li>
+                        <li>Colourful Matcha Latte - R80</li>
+                        <li>Pineapple Matcha Latte - R80</li>
+                        <li>Blueberry Matcha Latte - R80</li>
+                        <li>Mango Matcha Latte - R80</li>
+                        <li>Strawberry Matcha Latte - R80</li>
+                    </ul>
+                </div>
+
+                <div id="Matcha-mocktails" class="tabcontent">
+                    <ul>
+                        <li>Matcha Lemonade - R60</li>
+                        <li>Strawberry & Pineapple - R80</li>
+                        <li>Almond & Strawberry - R80</li>
+                        <li>Blueberry & Lemon - R80</li>
+                        <li>Strawberry & Lemon - R80</li>
+                    </ul>
+                </div>
+
+                <div id="Hot-matcha-lattes" class="tabcontent">
+                    <ul>
+                        <li>Plain Hot Matcha - R60</li>
+                        <li>Vanilla Hot Matcha - R70</li>
+                        <li>Hazelnut Hot Matcha - R70</li>
+                        <li>Caramel Hot Matcha - R70</li>
+                    </ul>
+                </div>
+                <br>
             </div>
 
-            <!-- Tab content -->
-            <div id="Matcha-lattes" class="tabcontent">
-                <ul>
-                    <li>Plain Matcha Latte - R60</li>
-                    <li>Rose Matcha Latte - R80</li>
-                    <li>Colourful Matcha Latte - R80</li>
-                    <li>Pineapple Matcha Latte - R80</li>
-                    <li>Blueberry Matcha Latte - R80</li>
-                    <li>Mango Matcha Latte - R80</li>
-                    <li>Strawberry Matcha Latte - R80</li>
-                </ul>
-            </div>
-            <br>
-
-            <div id="Matcha-mocktails" class="tabcontent">
-                <ul>
-                    <li>Matcha Lemonade - R60</li>
-                    <li>Strawberry & Pineapple - R80</li>
-                    <li>Almond & Strawberry - R80</li>
-                    <li>Blueberry & Lemon - R80</li>
-                    <li>Strawberry & Lemon - R80</li>
-                </ul>
-            </div>
-            <br>
-
-            <div id="Hot-matcha-lattes" class="tabcontent">
-                <ul>
-                    <li>Plain Hot Matcha - R60</li>
-                    <li>Vanilla Hot Matcha - R70</li>
-                    <li>Hazelnut Hot Matcha - R70</li>
-                    <li>Caramel Hot Matcha - R70</li>
-                </ul>
-            </div>
-            <br>
-        
             <div class="cardContainer">
                 <div class="card">
                     <img src="_images/matcha-cold.png" alt="a container of 100g of matcha powder." height="200" width="200">
