@@ -69,4 +69,69 @@ window.addEventListener('DOMContentLoaded', function() {
     openMenu(null, defaultTab.getAttribute('onclick').match(/'([^']+)'/)[1]);
     defaultTab.className += " active";
   }
+
+  // Gallery lightbox functionality
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const caption = document.getElementById("caption");
+  const closeBtn = document.querySelector(".close");
+
+  console.log("Lightbox elements:", { lightbox, lightboxImg, caption, closeBtn });
+
+  if (lightbox && lightboxImg && caption && closeBtn) {
+    const galleryImages = document.querySelectorAll(".gallery img");
+    console.log("Found gallery images:", galleryImages.length);
+    
+    // Function to close lightbox and restore scrolling
+    function closeLightbox() {
+      lightbox.style.display = "none";
+      document.body.style.overflow = "";
+      document.body.style.position = "";
+      console.log("Lightbox closed, scrolling restored");
+    }
+    
+    galleryImages.forEach((img, index) => {
+      console.log(`Adding click listener to image ${index}:`, img.src);
+      img.addEventListener("click", function(e) {
+        e.preventDefault();
+        console.log("Image clicked:", img.src);
+        lightbox.style.display = "block";
+        lightboxImg.src = img.src;
+        caption.textContent = img.alt;
+        // Don't disable scrolling - this was causing the issue
+      });
+    });
+
+    closeBtn.addEventListener("click", function(e) {
+      e.stopPropagation();
+      console.log("Close button clicked");
+      closeLightbox();
+    });
+
+    lightbox.addEventListener("click", function(e) {
+      if (e.target === lightbox) {
+        console.log("Lightbox background clicked");
+        closeLightbox();
+      }
+    });
+
+    // Prevent clicks on the lightbox image from closing the lightbox
+    lightboxImg.addEventListener("click", function(e) {
+      e.stopPropagation();
+    });
+
+    // Add escape key to close lightbox
+    document.addEventListener("keydown", function(e) {
+      if (e.key === "Escape" && lightbox.style.display === "block") {
+        closeLightbox();
+      }
+    });
+  } else {
+    console.log("Missing lightbox elements:", { 
+      lightbox: !!lightbox, 
+      lightboxImg: !!lightboxImg, 
+      caption: !!caption, 
+      closeBtn: !!closeBtn 
+    });
+  }
 });

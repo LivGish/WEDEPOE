@@ -85,6 +85,8 @@ h1, h2, h3, h4, h5, h6, p {
     transition: transform 0.2s, box-shadow 0.2s;
     box-sizing: border-box;
     width: 20rem; /*sets the card width*/
+    margin-top: 0rem auto; /*centers the container horizontally with 2rem gap around*/
+
 }
 
 .card img {
@@ -268,7 +270,6 @@ input, textarea {
     border: 0.0625rem solid #595959; /*underlines the section*/
     background-color: #f3f6eb; /*sets the backround colour*/
     padding: 0.5rem; /*adds padding*/
-
 }
 
 .tab {
@@ -309,8 +310,101 @@ input, textarea {
     list-style-type: none; /*removes bullet points*/
 }
 
+ /* Gallery */
+
+    .galleryContainer {
+        background-color: #ffffff; /*sets the backround colour*/
+        border: 0.0625rem solid #595959; /*border colour*/
+        padding: 1.25rem; /*Adds spacing around the card contents*/
+        transition: transform 0.2s, box-shadow 0.2s;
+        box-sizing: border-box;
+        width: 80%; /*sets the card width*/
+        margin: 2rem auto; /*centers the container horizontally with 2rem gap around*/
+    }
+
+    .gallery {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center; /*centers the gallery images horizontally*/
+    align-items: center; /*centers the gallery images vertically*/
+    }
+
+    .gallery img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+
+    .gallery img:hover {
+    transform: scale(1.05);
+    }
+
+    .lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    }
+
+    .lightbox-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    cursor: default;
+    }
+
+    .close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .close:hover {
+    background: rgba(0, 0, 0, 0.8);
+    }
+
 /*media tag styling (styling for small screens)*/
 @media (max-width: 600px) {
+    .gallery img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 8px;
+    }
+
+    .gallery {
+        gap: 0.5rem;
+    }
+
+    .galleryContainer {
+        width: 70%; /*sets the card width*/
+        margin: 2rem auto; /*centers the container horizontally with 2rem gap around*/
+    }
 
     .cardContainer {
         flex-direction: column; /*makes menu items stack vertically on small screens*/
@@ -363,65 +457,106 @@ input, textarea {
     }
 
     .cardContainer {
-    padding: 0.5rem; /*adds space round the cards*/
-    gap: 0.5rem; /*adds space between menu items*/
-}
+        padding: 0.5rem; /*adds space round the cards*/
+        gap: 0.5rem; /*adds space between menu items*/
+    }
 
-.accordion-btn {
-    border-radius: 0.1rem; /*rounds the button corners*/
-    padding: 12px 24px;
-    width: 70%;
-    margin-top: 0.15rem;
-    font-size: 65%;
-}
+    .accordion-btn {
+        border-radius: 0.1rem; /*rounds the button corners*/
+        padding: 12px 24px;
+        width: 70%;
+        margin-top: 0.15rem;
+        font-size: 65%;
+    }
 
-.panel {
-    padding: 12px 24px;
-    width: 61.5%;
-    font-size: 65%;
-}
+    .panel {
+        padding: 12px 24px;
+        width: 61.5%;
+        font-size: 65%;
+    }
 
-.header-text {
-    font-size: 1.4rem; /*sets the font size*/
-}
-
-/* Vertical tab layout for small screens */
-.tabContainer {
-    display: flex;
-    flex-direction: row;
-    width: 95%;
-}
-
-.tab {
-    float: none;
-    width: 30%;
-    border: none;
-    border: 0.0625rem solid #969696;
-}
-
-.tab button {
-    display: block;
-    width: 100%;
-    float: none;
-    text-align: left;
-    padding: 10px 12px;
-    font-size: 65%;
-}
-
-.tabcontent {
-    width: 70%;
-    padding: 10px;
-    border-left: none;
-    font-size: 65%;
-}
-
-}
-
-@media (min-width: 900px) {
     .header-text {
-    font-size: 3rem; /*sets the font size*/
-    position: absolute; /*allows precise positioning*/
-    top: 6rem; /*sets the distance from the top*/
-    left: 16px; /*sets the distance from the left*/
+        font-size: 1.4rem; /*sets the font size*/
+    }
+
+    /* Vertical tab layout for small screens */
+    .tabContainer {
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+    }
+
+    .tab {
+        float: none;
+        width: 30%;
+        border: none;
+        border: 0.0625rem solid #969696;
+    }
+
+    .tab button {
+        display: block;
+        width: 100%;
+        float: none;
+        text-align: left;
+        padding: 10px 12px;
+        font-size: 65%;
+    }
+
+    .tabcontent {
+        width: 70%;
+        padding: 10px;
+        border-left: none;
+        font-size: 65%;
+    }
 }
+
+#caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f1f1f1;
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+@media (min-width: 1100px) {
+    .header-text {
+        font-size: 3rem; /*sets the font size*/
+        position: absolute; /*allows precise positioning*/
+        top: 6rem; /*sets the distance from the top*/
+        left: 16px; /*sets the distance from the left*/
+    }
+    .gallery img {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 8px;
+    }
+
+    .gallery {
+        gap: 3rem;
+    }
+
+    .galleryContainer {
+        width: 80%; /*sets the card width*/
+        margin: 2rem auto; /*centers the container horizontally with 2rem gap around*/
+    }
+
+    .card img {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 0.0625rem;
+    }
+
+    .card {
+        margin-top: 0rem auto; /*centers the container horizontally with 2rem gap around*/
+        width: 30rem; /*sets the card width*/
+    }
+
+    .cardContainer {
+        padding: 2rem; /*adds space round the cards*/
+        gap: 2rem; /*adds space between menu items*/
+    }
 }
