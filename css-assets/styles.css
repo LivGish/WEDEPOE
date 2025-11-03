@@ -232,8 +232,8 @@ input, textarea {
 }
 
 .location iframe {
-    width: 50%; /*sets the width*/
-    height: 20%; /*sets the height*/
+    width: 25rem; /*sets the width*/
+    height: 15rem; /*sets the height*/
     padding-left: 1rem; /*adds padding to the left*/
     padding-bottom: 2rem; /*adds padding to the bottom*/
 }
@@ -409,6 +409,12 @@ input, textarea {
 
 /*media tag styling (styling for small screens)*/
 @media (max-width: 600px) {
+
+    .nav {
+        flex-direction: column; /*makes menu items stack vertically on small screens*/
+         align-items: center; /*puts menu items in the center of the bar*/
+    }
+    
     .gallery img {
     width: 5rem;
     height: 5rem;
@@ -441,7 +447,7 @@ input, textarea {
         margin-bottom: 0.5rem;
     }
 
-    h1, h2, h3, h4, h5, h6, p {
+    h1, h2, h3, h4, h5, h6, p, li {
         padding-left: 1rem; /*adds spacing between text and the edge of the screen*/
         font-size: 2vw;
     }
@@ -452,12 +458,12 @@ input, textarea {
         padding-top: 0.5rem; /*adds padding to the top*/
     }
 
-    .location iframe {
-        width: 50%; /*sets the width*/
-        height: 7rem; /*sets the height*/
-        padding-left: 0.5rem; /*adds padding to the left*/
-        padding-bottom: 1rem; /*adds padding to the bottom*/
-    }
+.location iframe {
+    width: 15rem; /*sets the width*/
+    height: 10rem; /*sets the height*/
+    padding-left: 1rem; /*adds padding to the left*/
+    padding-bottom: 2rem; /*adds padding to the bottom*/
+}
 
     .image {
         width: 25%; /*sets the image size to match the screen size*/
@@ -575,4 +581,14 @@ input, textarea {
         padding: 2rem; /*adds space round the cards*/
         gap: 2rem; /*adds space between menu items*/
     }
+}
+
+/* Franchise form feedback message styling */
+#formFeedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
 }

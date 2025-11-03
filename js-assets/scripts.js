@@ -12,24 +12,44 @@
 /*VERSION: 1.0*/
 /*AVAILABLE: https://www.w3schools.com/howto/tabs.asp*/
 
-// Accordion
-var acc = document.getElementsByClassName("accordion-btn");
-var i;
+// Accordion initialization function
+function initializeAccordions() {
+  var acc = document.getElementsByClassName("accordion-btn");
+  console.log("Found accordion buttons:", acc.length);
+  
+  for (var i = 0; i < acc.length; i++) {
+    console.log("Setting up accordion button", i, acc[i]);
+    acc[i].addEventListener("click", function() {
+      console.log("Accordion button clicked:", this);
+      
+      /* Toggle between adding and removing the "active" class,
+      to highlight the button that controls the panel */
+      this.classList.toggle("active");
+      console.log("Active class toggled, current classes:", this.className);
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      console.log("Panel found:", panel);
+      console.log("Panel current display:", panel.style.display);
+      console.log("Panel current maxHeight:", panel.style.maxHeight);
+      console.log("Panel scrollHeight:", panel.scrollHeight);
+      
+      // Check if panel is currently open (either by display or maxHeight)
+      var isOpen = panel.style.display === "block" || panel.style.maxHeight;
+      
+      if (isOpen) {
+        // Close the panel
+        panel.style.display = "none";
+        panel.style.maxHeight = null;
+        console.log("Panel closed");
+      } else {
+        // Open the panel
+        panel.style.display = "block";
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        console.log("Panel opened - display: block, maxHeight:", panel.style.maxHeight);
+      }
+    });
+  }
 }
 
 // Tabs
@@ -49,6 +69,9 @@ function openMenu(evt, menuName) {
 
 // Open the default tab on page load, even if not triggered by a click
 window.addEventListener('DOMContentLoaded', function() {
+  // Initialize accordions
+  initializeAccordions();
+  
   // Load drinks data first
   loadDrinksData();
   
@@ -238,14 +261,11 @@ function initializeContactForm() {
         `Message:%0D%0A${message}`;
       
       // Create mailto link
-      const mailtoLink = `mailto:info@love-matcha.co.za?subject=${encodeURIComponent(subject)}&body=${body}`;
+      const mailtoLink = `mailto:contact@LoveMatchaProject.co.za?subject=${encodeURIComponent(subject)}&body=${body}`;
       
       // Open email client
       window.location.href = mailtoLink;
-      
-      // Show confirmation message
-      alert('Your email client should now open with the pre-filled message. If it doesn\'t open automatically, please contact us directly at info@love-matcha.co.za');
-      
+
       // Reset form
       this.reset();
     });
@@ -299,13 +319,23 @@ function initializeFranchiseForm() {
       
       // Success message
       feedback.innerHTML = `
-        <div style="background-color: #f3f6eb; border: 2px solid #3c4f12; padding: 20px; border-radius: 10px; margin-top: 20px;">
+        <div style="
+          background-color: #f3f6eb; 
+          border: 2px solid #3c4f12; 
+          padding: 20px; 
+          border-radius: 10px; 
+          margin: 20px auto; 
+          max-width: 600px;
+          width: 90%;
+          text-align: center;
+          display: block;
+        ">
           <h3 style="color: #3c4f12; text-align: center; margin: 0 0 15px 0;">🎉 Thank You for Your Interest!</h3>
           <p style="color: #3c4f12; text-align: center; margin: 5px 0;"><strong>Dear ${name},</strong></p>
           <p style="color: #3c4f12; text-align: center; margin: 5px 0;">You meet the requirements to become a Love Matcha franchisee!</p>
           <p style="color: #3c4f12; text-align: center; margin: 5px 0;">Our franchise team will review your application and contact you within 3-5 business days.</p>
           <p style="color: #3c4f12; text-align: center; margin: 15px 0 5px 0;"><strong>Next Steps:</strong></p>
-          <ul style="color: #3c4f12; text-align: left; max-width: 400px; margin: 0 auto;">
+          <ul style="color: #3c4f12; text-align: left; max-width: 400px; margin: 0 auto; display: inline-block;">
             <li>We'll email you a detailed franchise information packet</li>
             <li>Schedule a consultation call to discuss your vision</li>
             <li>Site visit and location assessment</li>

@@ -145,11 +145,7 @@ Phone
 ![phone 5](./_images/README-images/phone-5.png)
 
 10.	Bibliography
-Afsaana03, 2025. moviWeb [code]. GitHub. Available at: https://github.com/afsaana03/movieWeb [accessed 26 September 2025]
-
-New Perspective Design, 2021. What Is The Cost Of Creating A Website In South Africa? [2025] | Website Design Prices South Africa | How Much Does Website Design In South Africa Cost? [online]. Available at: https://www.newperspec estudio.co.za/wp/what-is-the-cost-of-creating-a-website-in-south-africa/ [Accessed 15 August 2025].
-
-Web Partner, 2019. Average Monthly Fee for Website Maintenance in South Africa [online]. Available at: https://www.webpartner.co.za/blog/121-average-monthly-maintenance-fee [Accessed 15 August 2025].
+Afsaana03, 2025. moviWeb [code]. GitHub. Available at: https://github.com/afsaana03/movieWeb [Accessed 26 September 2025].
 
 Coolors, 2025. Love Matcha mock up colour palette. [online] Available at: https://coolors.co/user/palettes/689dacb7cccf77000b16548c [Accessed 14 August 2025].
 
@@ -157,19 +153,46 @@ Host Africa, 2025. Fast, Reliable and Secure Web Hosting in South Africa. [onlin
 
 Love Matcha, 2025. Love matcha [online] Available at: https://love-matcha.co.za [Accessed 12 August 2025].
 
+New Perspective Design, 2021. What Is The Cost Of Creating A Website In South Africa? [2025] | Website Design Prices South Africa | How Much Does Website Design In South Africa Cost? [online]. Available at: https://www.newperspecestudio.co.za/wp/what-is-the-cost-of-creating-a-website-in-south-africa/ [Accessed 15 August 2025].
+
 Sklyanik, V., 2021. 21 KPI examples every business needs to know. [online] Wix Blog. Available at: https://www.wix.com/blog/kpi-examples [Accessed 14 August 2025].
 
-W3Schools. [2025] CSS Styling Buttons. [online]. Available at: https://www.w3schools.com/css/css3_buttons.asp [Accessed: 29 September 2025].
+W3Schools, 2025. CSS Styling Buttons. [online]. Available at: https://www.w3schools.com/css/css3_buttons.asp [Accessed 29 September 2025].
 
-W3Schools, 2025. HTML <button> tag. [online] Available at: https://www.w3schools.com/tags/tag_button.asp [Accessed: 29 September 2025].
+W3Schools, 2025. HTML <button> tag. [online] Available at: https://www.w3schools.com/tags/tag_button.asp [Accessed 29 September 2025].
 
-W3Schools, 2025. Accordions [online] Available at: <https://www.w3schools.com/howto/howto_js_accordion.asp> [Accessed 28 October 2025].
+W3Schools, 2025. HTML <meta> tag. [online] Available at: https://www.w3schools.com/tags/meta.asp [Accessed 3 November 2025].
 
-‌
+W3Schools, 2025. How to - Collapsibles/Accordions [online] Available at: https://www.w3schools.com/howto/howto_js_accordion.asp [Accessed 28 October 2025].
 
-Webflow Team, 2025. How to design a homepage: 8 essentials for wowing your audience  [online]. Available at: https://webflow.com/blog/design-a-homepage [Accessed 14 August 2025].
+W3Schools, 2025. How to - Modal Images [online] Available at: https://www.w3schools.com/howto/howto_css_modal_images.asp [Accessed 3 November 2025].
+
+W3Schools, 2025. How to - Search button [online] Available at: https://www.w3schools.com/howto/howto_css_search_button.asp [Accessed 3 November 2025].
+
+W3Schools, 2025. How to - Tabs [online] Available at: https://www.w3schools.com/howto/howto_js_tabs.asp [Accessed 3 November 2025].
+
+Webflow Team, 2025. How to design a homepage: 8 essentials for wowing your audience. [online]. Available at: https://webflow.com/blog/design-a-homepage [Accessed 14 August 2025].
+
+Web Partner, 2019. Average Monthly Fee for Website Maintenance in South Africa. [online]. Available at: https://www.webpartner.co.za/blog/121-average-monthly-maintenance-fee [Accessed 15 August 2025].
 
 10. Changelog
+03 November 2025
+- README, changelog, and references updated
+- franchise form completed and contact form updated
+- contact page form completed
+- meta tags and page titles updated
+- search feature changed to dynamically load code with js
+- search optimised
+- search function on menu page implimented
+
+31 October 2025
+- lightbox added t menu screen and card containers optimised for larger screens
+
+29 October 2025
+- tab on menu made vertical for smaller screens
+- header image on homescreen reformatted
+- menu tabs completed
+
 28 October 2025
 - part 1 feedback reflection added to README
 - part 2 feedback reflection added to README
