@@ -135,3 +135,14 @@ window.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+// Search & Filtering
+document.getElementById("searchBox").addEventListener("keyup", function () {
+  let filter = this.value.toLowerCase();
+  let drinks = document.querySelectorAll("#drinkMenu li");
+
+  drinks.forEach(i => {
+    let text = i.textContent.toLowerCase();
+    i.style.display = text.includes(filter) ? "block" : "none";
+  });
+});

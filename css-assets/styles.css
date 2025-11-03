@@ -86,7 +86,6 @@ h1, h2, h3, h4, h5, h6, p {
     box-sizing: border-box;
     width: 20rem; /*sets the card width*/
     margin-top: 0rem auto; /*centers the container horizontally with 2rem gap around*/
-
 }
 
 .card img {

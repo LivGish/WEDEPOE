@@ -20,64 +20,57 @@
 
     <body>
     <!--Navigation panel to switch between pages.-->
-            <ul class="nav">
-                <li><img src="_images/logo.jpg" alt="Love Matcha Logo" height="100" width="100"></li>
-                <li><a href="homepage.html"> Homepage</a></li>
-                <li><a href="menu.html"> Menu</a></li>
-                <li><a href="products.html"> Products</a></li>  
-                <li><a href="franchise.html"> Franchise</a></li>
-                <li><a href="contact.html"> Contact</a></li>
-            </ul>
+        <ul class="nav">
+            <li><img src="_images/logo.jpg" alt="Love Matcha Logo" height="100" width="100"></li>
+            <li><a href="homepage.html"> Homepage</a></li>
+            <li><a href="menu.html"> Menu</a></li>
+             <li><a href="products.html"> Products</a></li>  
+            <li><a href="franchise.html"> Franchise</a></li>
+            <li><a href="contact.html"> Contact</a></li>
+        </ul>
 
         <div class="containerPink">
-                <br>
-                <h1>Menu</h1>
-                <br>
-
-                <div class="tabContainer">
+            <br>
+            <h1>Menu</h1>
+            <br>
+            <div class="tabContainer">
                 <!-- Tab links -->
                 <div class="tab">
-                <button class="tablinks" onclick="openMenu(event, 'Full-menu')" id="defaultOpen">Full menu</button>
-                <button class="tablinks" onclick="openMenu(event, 'Iced-matcha-lattes')">Iced matcha lattes</button>
-                <button class="tablinks" onclick="openMenu(event, 'Matcha-mocktails')">Matcha mocktails</button>
-                <button class="tablinks" onclick="openMenu(event, 'Hot-matcha-lattes')">Hot matcha lattes</button>
+                    <button class="tablinks" onclick="openMenu(event, 'Full-menu')" id="defaultOpen">Full menu</button>
+                    <button class="tablinks" onclick="openMenu(event, 'Iced-matcha-lattes')">Iced matcha lattes</button>
+                    <button class="tablinks" onclick="openMenu(event, 'Matcha-mocktails')">Matcha mocktails</button>
+                    <button class="tablinks" onclick="openMenu(event, 'Hot-matcha-lattes')">Hot matcha lattes</button>
+                    <button class="tablinks" onclick="openMenu(event, 'Search')">Search</button>
                 </div>
-
                 <!-- Tab content -->
                 <div id="Full-menu" class="tabcontent">
-    
-                        <h3>Iced Matcha Lattes</h3>
-                        <ul>
-                            <li>Plain Iced Matcha Latte - R60</li>
-                            <li>Rose Iced Matcha Latte - R80</li>
-                            <li>Colourful Iced Matcha Latte - R80</li>
-                            <li>Pineapple Iced Matcha Latte - R80</li>
-                            <li>Blueberry Iced Matcha Latte - R80</li>
-                            <li>Mango Iced Matcha Latte - R80</li>
-                            <li>Strawberry Iced Matcha Latte - R80</li>
-                        </ul>
-                        
-
-                        <br>
-
-                        <h3>Matcha mocktails</h3>
-                        <ul>
-                            <li>Matcha Lemonade - R60</li>
-                            <li>Strawberry & Pineapple - R80</li>
-                            <li>Almond & Strawberry - R80</li>
-                            <li>Blueberry & Lemon - R80</li>
-                            <li>Strawberry & Lemon - R80</li>
-                        </ul>
-
-                        <br>
-
-                        <h3>Hot matcha lattes</h3>
-                        <ul>
-                            <li>Plain Hot Matcha - R60</li>
-                            <li>Vanilla Hot Matcha - R70</li>
-                            <li>Hazelnut Hot Matcha - R70</li>
-                            <li>Caramel Hot Matcha - R70</li>
-                        </ul>
+                    <h3>Iced Matcha Lattes</h3>
+                    <ul id="drinkMenu">
+                        <li>Plain Iced Matcha Latte - R60</li>
+                        <li>Rose Iced Matcha Latte - R80</li>
+                        <li>Colourful Iced Matcha Latte - R80</li>
+                        <li>Pineapple Iced Matcha Latte - R80</li>
+                        <li>Blueberry Iced Matcha Latte - R80</li>
+                        <li>Mango Iced Matcha Latte - R80</li>
+                        <li>Strawberry Iced Matcha Latte - R80</li>
+                    </ul>
+                    <br>
+                    <h3>Matcha mocktails</h3>
+                    <ul id="drinkMenu">
+                        <li>Matcha Lemonade - R60</li>
+                        <li>Strawberry & Pineapple - R80</li>
+                        <li>Almond & Strawberry - R80</li>
+                        <li>Blueberry & Lemon - R80</li>
+                        <li>Strawberry & Lemon - R80</li>
+                    </ul>
+                    <br>
+                    <h3>Hot matcha lattes</h3>
+                    <ul id="drinkMenu">
+                        <li>Plain Hot Matcha Latte - R60</li>
+                        <li>Vanilla Hot Matcha Latte - R70</li>
+                        <li>Hazelnut Hot Matcha Latte - R70</li>
+                        <li>Caramel Hot Matcha Latte - R70</li>
+                    </ul>
                 </div>
 
                 <div id="Iced-matcha-lattes" class="tabcontent">
@@ -104,13 +97,34 @@
 
                 <div id="Hot-matcha-lattes" class="tabcontent">
                     <ul>
-                        <li>Plain Hot Matcha - R60</li>
-                        <li>Vanilla Hot Matcha - R70</li>
-                        <li>Hazelnut Hot Matcha - R70</li>
-                        <li>Caramel Hot Matcha - R70</li>
+                        <li>Plain Hot Matcha Latte - R60</li>
+                        <li>Vanilla Hot Matcha Latte - R70</li>
+                        <li>Hazelnut Hot Matcha Latte - R70</li>
+                        <li>Caramel Hot Matcha Latte - R70</li>
                     </ul>
                 </div>
-                <br>
+                
+                <div id="Search" class="tabcontent">
+                    <input type="text" id="searchBox" placeholder="Search for drink" />
+                    <ul id="drinkMenu">
+                        <li>Plain Iced Matcha Latte - R60</li>
+                        <li>Rose Iced Matcha Latte - R80</li>
+                        <li>Colourful Iced Matcha Latte - R80</li>
+                        <li>Pineapple Iced Matcha Latte - R80</li>
+                        <li>Blueberry Iced Matcha Latte - R80</li>
+                        <li>Mango Iced Matcha Latte - R80</li>
+                        <li>Strawberry Iced Matcha Latte - R80</li>
+                        <li>Matcha Lemonade - R60</li>
+                        <li>Strawberry & Pineapple - R80</li>
+                        <li>Almond & Strawberry - R80</li>
+                        <li>Blueberry & Lemon - R80</li>
+                        <li>Strawberry & Lemon - R80</li>
+                        <li>Plain Hot Matcha Latte - R60</li>
+                        <li>Vanilla Hot Matcha Latte - R70</li>
+                        <li>Hazelnut Hot Matcha Latte - R70</li>
+                        <li>Caramel Hot Matcha Latte - R70</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="galleryContainer">
@@ -118,9 +132,9 @@
                 <br>
                 <div class="gallery">
                     <img src="_images/matcha-cold.png" alt="Plain Iced Matcha Latte." height="150" width="150">
-                    <img src="_images/matcha-hot.png" alt="a pink box containing matcha tols." height="150" width="150">
-                    <img src="_images/matcha-lemonade.png" alt="a container of 100g of matcha powder." height="150" width="150">
-                    <img src="_images/matcha-mangi.png" alt="a container of 100g of matcha powder." height="150" width="150">
+                    <img src="_images/matcha-hot.png" alt="Plain Hot Matcha Latte." height="150" width="150">
+                    <img src="_images/matcha-lemonade.png" alt="Matcha Lemonade." height="150" width="150">
+                    <img src="_images/matcha-mango.png" alt="Mango Iced Matcha Latte." height="150" width="150">
                 </div>
             </div>  
             
@@ -130,10 +144,7 @@
                 <img class="lightbox-content" id="lightbox-img" />
                 <div id="caption"></div>
             </div>
-            
         </div>
-
-
         <div class="container">
             <!--Love Matcha product recommendations-->
             <br>
