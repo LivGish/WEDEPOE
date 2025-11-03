@@ -55,6 +55,12 @@ window.addEventListener('DOMContentLoaded', function() {
   // Initialize search functionality
   initializeSearch();
   
+  // Initialize franchise form
+  initializeFranchiseForm();
+  
+  // Initialize contact form
+  initializeContactForm();
+  
   // Open default tab
   var defaultTab = document.getElementById("defaultOpen");
   if (defaultTab) {
@@ -209,35 +215,112 @@ function loadDrinksData() {
 }
 
 // Enhanced contact form functionality
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-  e.preventDefault();
+function initializeContactForm() {
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('number').value;
+      const email = document.getElementById('email').value;
+      const reason = document.getElementById('reason').value;
+      const message = document.getElementById('experience').value;
+      
+      // Create email subject and body
+      const subject = `Contact Form: ${reason}`;
+      const body = 
+        `Name: ${name}%0D%0A` +
+        `Phone: ${phone}%0D%0A` +
+        `Email: ${email}%0D%0A%0D%0A` +
+        `Message Type: ${reason}%0D%0A%0D%0A` +
+        `Message:%0D%0A${message}`;
+      
+      // Create mailto link
+      const mailtoLink = `mailto:info@love-matcha.co.za?subject=${encodeURIComponent(subject)}&body=${body}`;
+      
+      // Open email client
+      window.location.href = mailtoLink;
+      
+      // Show confirmation message
+      alert('Your email client should now open with the pre-filled message. If it doesn\'t open automatically, please contact us directly at info@love-matcha.co.za');
+      
+      // Reset form
+      this.reset();
+    });
+  }
+}
+
+// Franchise form validation and feedback
+function initializeFranchiseForm() {
+  const franchiseForm = document.getElementById("franchiseForm");
+  console.log("Looking for franchise form:", franchiseForm);
   
-  // Get form data
-  const name = document.getElementById('name').value;
-  const phone = document.getElementById('number').value;
-  const email = document.getElementById('email').value;
-  const reason = document.getElementById('reason').value;
-  const message = document.getElementById('experience').value;
-  
-  // Create email subject and body
-  const subject = `Contact Form: ${reason}`;
-  const body = 
-    `Name: ${name}%0D%0A` +
-    `Phone: ${phone}%0D%0A` +
-    `Email: ${email}%0D%0A%0D%0A` +
-    `Message Type: ${reason}%0D%0A%0D%0A` +
-    `Message:%0D%0A${message}`
-  ; 
-  
-  // Create mailto link
-  const mailtoLink = `mailto:info@love-matcha.co.za?subject=${encodeURIComponent(subject)}&body=${body}`;
-  
-  // Open email client
-  window.location.href = mailtoLink;
-  
-  // Show confirmation message
-  alert('Your email client should now open with the pre-filled message. If it doesn\'t open automatically, please contact us directly at info@love-matcha.co.za');
-  
-  // Reset form
-  this.reset();
-});
+  if (franchiseForm) {
+    console.log("Franchise form found, adding event listener");
+    franchiseForm.addEventListener("submit", function(e) {
+      console.log("Franchise form submitted!");
+      e.preventDefault();
+      
+      // Get form data for validation
+      const name = document.getElementById("franchiseName")?.value.trim();
+      const phone = document.getElementById("franchisePhone")?.value.trim();
+      const email = document.getElementById("franchiseEmail")?.value.trim();
+      const address = document.getElementById("franchiseAddress")?.value.trim();
+      const reason = document.getElementById("franchiseReason")?.value.trim();
+      const experience = document.getElementById("franchiseExperience")?.value.trim();
+      const type = document.getElementById("franchiseType")?.value.trim();
+      const budget = document.getElementById("franchiseBudget")?.value.trim();
+      
+      const feedback = document.getElementById("formFeedback");
+      console.log("Form data:", { name, phone, email, address, reason, experience, type, budget });
+      
+      // Basic validation
+      if (!name || !email || !phone || !address || !reason || !experience || !type || !budget) {
+        feedback.innerHTML = '<p style="color: red; font-weight: bold;">Please fill in all fields correctly.</p>';
+        console.log("Validation failed: missing fields");
+        return;
+      }
+      
+      if (!email.includes("@")) {
+        feedback.innerHTML = '<p style="color: red; font-weight: bold;">Please enter a valid email address.</p>';
+        console.log("Validation failed: invalid email");
+        return;
+      }
+      
+      if (reason.length < 10) {
+        feedback.innerHTML = '<p style="color: red; font-weight: bold;">Please provide more details about your interest (minimum 10 characters).</p>';
+        console.log("Validation failed: reason too short");
+        return;
+      }
+      
+      console.log("Validation passed, showing success message");
+      
+      // Success message
+      feedback.innerHTML = `
+        <div style="background-color: #f3f6eb; border: 2px solid #3c4f12; padding: 20px; border-radius: 10px; margin-top: 20px;">
+          <h3 style="color: #3c4f12; text-align: center; margin: 0 0 15px 0;">🎉 Thank You for Your Interest!</h3>
+          <p style="color: #3c4f12; text-align: center; margin: 5px 0;"><strong>Dear ${name},</strong></p>
+          <p style="color: #3c4f12; text-align: center; margin: 5px 0;">You meet the requirements to become a Love Matcha franchisee!</p>
+          <p style="color: #3c4f12; text-align: center; margin: 5px 0;">Our franchise team will review your application and contact you within 3-5 business days.</p>
+          <p style="color: #3c4f12; text-align: center; margin: 15px 0 5px 0;"><strong>Next Steps:</strong></p>
+          <ul style="color: #3c4f12; text-align: left; max-width: 400px; margin: 0 auto;">
+            <li>We'll email you a detailed franchise information packet</li>
+            <li>Schedule a consultation call to discuss your vision</li>
+            <li>Site visit and location assessment</li>
+            <li>Final approval and franchise agreement</li>
+          </ul>
+          <p style="color: #3c4f12; text-align: center; margin: 15px 0 0 0;"><strong>Contact:</strong> franchise@love-matcha.co.za</p>
+        </div>
+      `;
+      console.log("Success message displayed");
+      
+      // Clear form inputs immediately after showing success message
+      this.reset();
+      console.log("Form inputs cleared");
+    });
+  } else {
+    console.log("Franchise form not found on this page");
+  }
+}

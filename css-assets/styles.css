@@ -206,6 +206,19 @@ input, textarea {
     color: #595959; /*text colour*/
 }
 
+.formInput {
+    font-family: Georgia, serif; /*sets the  font*/
+    width: 80%; /*sets the input width*/
+    height: auto;
+    padding: 0.5rem; /*adds padding*/
+    margin-top: 0.25rem; /*adds a margin to the top*/
+    margin-bottom: 1rem; /*adds a margin to the top*/
+    border-radius: 0.5rem; /*rounds the corners*/
+    border: 0.0625rem solid #3c4f12; /*sets the border thickness and colour*/
+    background-color: #ffffff; /*sets the backround colour*/
+    color: #595959; /*text colour*/
+}
+
 ::placeholder {
     text-align: left; /*keeps the text to the left*/
 }
