@@ -150,12 +150,12 @@
             <br>
             <H2>Have any complaints, queries or suggestions?</H2>
             <h4>Fill out this form to send us an email and we'll get back to you as soon as we can.</h4>
-            <form action="#" method="post">
+            <form id="contactForm" action="mailto:info@love-matcha.co.za" method="GET">
                 <label for="name">Full name:</label>
                 <input type="text" id="name" name="name" placeholder="Eg. John Doe" required>
 
                 <label for="number">Phone number:</label>
-                <input type="number" id="number" name="number" placeholder="Eg. 012 345 6789" required>
+                <input type="tel" id="number" name="number" placeholder="Eg. 012 345 6789" required>
                 
                 <label for="email">Email address:</label>
                 <input type="email" id="email" name="email" placeholder="Eg. example@email.com" required>
@@ -165,14 +165,11 @@
 
                 <label for="experience">message:</label>
                 <textarea id="experience" name="experience" rows="10" placeholder="Insert message here" required></textarea>
-            
-                <div class="buttonContainer">
-                <a class="button" type="Submit">
-                <button>Submit details</button>
-                </a>
-            </div>
-            </form>
 
+                <div class="buttonContainer">
+                    <button type="submit">Submit details</button>
+                </div>
+            </form>
         </div>
 
         <div class="containerGreen">
@@ -234,5 +231,38 @@
         </footer>
 
         <script src="js-assets/scripts.js"></script>
+        <script>
+            // Enhanced contact form functionality
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const name = document.getElementById('name').value;
+                const phone = document.getElementById('number').value;
+                const email = document.getElementById('email').value;
+                const reason = document.getElementById('reason').value;
+                const message = document.getElementById('experience').value;
+                
+                // Create email subject and body
+                const subject = `Contact Form: ${reason}`;
+                const body = `Name: ${name}%0D%0A` +
+                           `Phone: ${phone}%0D%0A` +
+                           `Email: ${email}%0D%0A%0D%0A` +
+                           `Message Type: ${reason}%0D%0A%0D%0A` +
+                           `Message:%0D%0A${message}`;
+                
+                // Create mailto link
+                const mailtoLink = `mailto:info@love-matcha.co.za?subject=${encodeURIComponent(subject)}&body=${body}`;
+                
+                // Open email client
+                window.location.href = mailtoLink;
+                
+                // Show confirmation message
+                alert('Your email client should now open with the pre-filled message. If it doesn\'t open automatically, please contact us directly at info@love-matcha.co.za');
+                
+                // Reset form
+                this.reset();
+            });
+        </script>
     </body>
 </html>

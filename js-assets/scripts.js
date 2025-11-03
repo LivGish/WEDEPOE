@@ -207,3 +207,37 @@ function loadDrinksData() {
   // For search functionality
   displayDrinks(allDrinks, "searchList");
 }
+
+// Enhanced contact form functionality
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // Get form data
+  const name = document.getElementById('name').value;
+  const phone = document.getElementById('number').value;
+  const email = document.getElementById('email').value;
+  const reason = document.getElementById('reason').value;
+  const message = document.getElementById('experience').value;
+  
+  // Create email subject and body
+  const subject = `Contact Form: ${reason}`;
+  const body = 
+    `Name: ${name}%0D%0A` +
+    `Phone: ${phone}%0D%0A` +
+    `Email: ${email}%0D%0A%0D%0A` +
+    `Message Type: ${reason}%0D%0A%0D%0A` +
+    `Message:%0D%0A${message}`
+  ; 
+  
+  // Create mailto link
+  const mailtoLink = `mailto:info@love-matcha.co.za?subject=${encodeURIComponent(subject)}&body=${body}`;
+  
+  // Open email client
+  window.location.href = mailtoLink;
+  
+  // Show confirmation message
+  alert('Your email client should now open with the pre-filled message. If it doesn\'t open automatically, please contact us directly at info@love-matcha.co.za');
+  
+  // Reset form
+  this.reset();
+});
