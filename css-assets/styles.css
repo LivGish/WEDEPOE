@@ -148,11 +148,11 @@ h1, h2, h3, h4, h5, h6, p {
 .header-text {
     font-family: Georgia, serif; /*sets the website font*/
     color: #30410a; /*text colour*/
-    font-size: 1.75rem; /*sets the font size*/
+    font-size: 2rem; /*sets the font size*/
     text-align: center; /*centers the text*/
     padding-right: 60%; /*adds padding to the bottom of the text*/
     position: absolute; /*allows precise positioning*/
-    top: 2.5rem; /*sets the distance from the top*/
+    top: 40%; /*sets the distance from the top*/
     left: 16px; /*sets the distance from the left*/
 }
 
@@ -220,7 +220,7 @@ input, textarea {
 
 .location iframe {
     width: 50%; /*sets the width*/
-    height: 10%; /*sets the height*/
+    height: 20%; /*sets the height*/
     padding-left: 1rem; /*adds padding to the left*/
     padding-bottom: 2rem; /*adds padding to the bottom*/
 }
@@ -307,6 +307,12 @@ input, textarea {
 
 .tabcontent ul {
     list-style-type: none; /*removes bullet points*/
+}
+
+.tabcontent input {
+    width: 90%;
+    margin: 0 auto; /*centers the search input*/
+    display: block; /*makes input a block element so margin: 0 auto works*/
 }
 
  /* Gallery */
@@ -475,7 +481,7 @@ input, textarea {
     }
 
     .header-text {
-        font-size: 1.4rem; /*sets the font size*/
+        font-size: 1rem; /*sets the font size*/
     }
 
     /* Vertical tab layout for small screens */
@@ -524,9 +530,7 @@ input, textarea {
 @media (min-width: 1100px) {
     .header-text {
         font-size: 3rem; /*sets the font size*/
-        position: absolute; /*allows precise positioning*/
-        top: 6rem; /*sets the distance from the top*/
-        left: 16px; /*sets the distance from the left*/
+
     }
     .gallery img {
         width: 20rem;

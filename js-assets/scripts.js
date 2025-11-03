@@ -24,21 +24,6 @@ for (i = 0; i < acc.length; i++) {
 
     /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-
-var acc = document.getElementsByClassName("accordion-btn");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
@@ -64,6 +49,13 @@ function openMenu(evt, menuName) {
 
 // Open the default tab on page load, even if not triggered by a click
 window.addEventListener('DOMContentLoaded', function() {
+  // Load drinks data first
+  loadDrinksData();
+  
+  // Initialize search functionality
+  initializeSearch();
+  
+  // Open default tab
   var defaultTab = document.getElementById("defaultOpen");
   if (defaultTab) {
     openMenu(null, defaultTab.getAttribute('onclick').match(/'([^']+)'/)[1]);
@@ -137,12 +129,81 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 // Search & Filtering
-document.getElementById("searchBox").addEventListener("keyup", function () {
-  let filter = this.value.toLowerCase();
-  let drinks = document.querySelectorAll("#drinkMenu li");
+function initializeSearch() {
+  const searchBox = document.getElementById("searchBox");
+  if (searchBox) {
+    searchBox.addEventListener("keyup", function () {
+      let filter = this.value.toLowerCase();
+      let drinks = document.querySelectorAll("#searchList li");
 
-  drinks.forEach(i => {
-    let text = i.textContent.toLowerCase();
-    i.style.display = text.includes(filter) ? "block" : "none";
-  });
-});
+      drinks.forEach(i => {
+        let text = i.textContent.toLowerCase();
+        i.style.display = text.includes(filter) ? "list-item" : "none";
+      });
+    });
+  }
+}
+
+const coldDrinks = [
+  { name: "Plain Iced Matcha Latte", price: 60 },
+  { name: "Rose Iced Matcha Latte", price: 80 },
+  { name: "Colourful Iced Matcha Latte", price: 80 },
+  { name: "Pineapple Iced Matcha Latte", price: 80 },
+  { name: "Blueberry Iced Matcha Latte", price: 80 },
+  { name: "Mango Iced Matcha Latte", price: 80 },
+  { name: "Strawberry Iced Matcha Latte", price: 80 },
+];
+
+const mocktails = [
+  { name: "Matcha Lemonade", price: 60 },
+  { name: "Strawberry & Pineapple", price: 80 },
+  { name: "Almond & Strawberry", price: 80 },
+  { name: "Blueberry & Lemon", price: 80 },
+  { name: "Strawberry & Lemon", price: 80 },
+];
+
+const hotDrinks = [
+  { name: "Plain Hot Matcha Latte", price: 60 },
+  { name: "Vanilla Hot Matcha Latte", price: 70 },
+  { name: "Hazelnut Hot Matcha Latte", price: 70 },
+  { name: "Caramel Hot Matcha Latte", price: 70 },
+];
+
+// Combine all drinks for the full menu and search functionality
+const allDrinks = [...coldDrinks, ...mocktails, ...hotDrinks];
+
+// --- Function to display any drink list ---
+function displayDrinks(list, elementId) {
+  const container = document.getElementById(elementId);
+  if (container) {
+    container.innerHTML = ""; // clear previous items
+    list.forEach(drink => {
+      const li = document.createElement("li");
+      li.textContent = `${drink.name} - R${drink.price}`;
+      container.appendChild(li);
+    });
+  }
+}
+
+// --- Load all tab contents on page load ---
+function loadDrinksData() {
+  // Load drinks for all the different tab content areas
+  const fullMenuContainers = document.querySelectorAll('#Full-menu #icedDrinks, #Full-menu #mocktailDrinks, #Full-menu #hotDrinks');
+  
+  // Full menu tab
+  const fullMenuIced = document.querySelector('#Full-menu #icedDrinks');
+  const fullMenuMocktails = document.querySelector('#Full-menu #mocktailDrinks');  
+  const fullMenuHot = document.querySelector('#Full-menu #hotDrinks');
+  
+  if (fullMenuIced) displayDrinks(coldDrinks, 'icedDrinks');
+  if (fullMenuMocktails) displayDrinks(mocktails, 'mocktailDrinks');
+  if (fullMenuHot) displayDrinks(hotDrinks, 'hotDrinks');
+  
+  // Individual tabs - we need to create unique containers for these
+  displayDrinks(coldDrinks, "icedDrinksTab");
+  displayDrinks(mocktails, "mocktailDrinksTab");
+  displayDrinks(hotDrinks, "hotDrinksTab");
+  
+  // For search functionality
+  displayDrinks(allDrinks, "searchList");
+}
